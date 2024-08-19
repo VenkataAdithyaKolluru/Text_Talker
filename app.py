@@ -27,7 +27,7 @@ def download():
     url = url = request.form['url'].strip() 
     message = download_video(url) 
     flash(message) 
-    return redirect(url_for('index'))  # Redirect back to the homepage
+    return redirect(url_for('index'))  
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Run the Flask app
+    app.run(debug=True) 

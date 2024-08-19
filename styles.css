@@ -1,0 +1,88 @@
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin: 200px;
+    background-color: #343030;
+    color: #ffffff;
+    height: 30vh
+    
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label, input[type="text"] {
+    margin: 10px;
+    padding: 12px 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+  }
+  
+  input[type="submit"] {
+    background-color: #f4f6fc;
+    color: rgb(46, 57, 49);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4c7942;
+  }
+  
+  .flash-message {
+    border: 1px solid #666;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  #download-button {
+    margin-top: 20px;
+  }
+  .image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 19%;
+    background-color: #f4f6fc;
+    color: #3d3a3a;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 50px;
+    align-content: center;
+    text-align: left;
+
+  }

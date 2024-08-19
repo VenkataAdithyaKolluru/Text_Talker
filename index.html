@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Video Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>YT Video Downloader</h2>
+    <form action="/download" method="POST">
+        <label for="url">YouTube URL :</label>
+        <input type="text" id="url" name="url" placeholder="Enter YouTube link">
+        <input type="submit" value="Download">
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message">
+          <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endwith %}
+    <div class="footer-container">
+        <p>Created by  VENKATA ADITHYA KOLLURU</p>
+        <p><a href="https://www.linkedin.com/in/venkataadithyakolluru">LINKEDIN</a>
+        <br/>
+        <a href="https://github.com/VenkataAdithyaKolluru">   GITHUB</a>
+       </p>
+      </div>
+</body>
+</html>

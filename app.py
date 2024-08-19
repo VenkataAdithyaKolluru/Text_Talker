@@ -3,7 +3,7 @@ from pytube import YouTube
 import yt_dlp
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Required for flashing messages
+app.secret_key = 'your_secret_key'
 
 
 def download_video(url, path="downloads/"):
@@ -24,9 +24,9 @@ def index():
 
 @app.route('/download', methods=['POST'])
 def download():
-    url = url = request.form['url'].strip()  # Get the YouTube URL from the form
-    message = download_video(url)  # Download the video
-    flash(message)  # Show a message to the user
+    url = url = request.form['url'].strip() 
+    message = download_video(url) 
+    flash(message) 
     return redirect(url_for('index'))  # Redirect back to the homepage
 
 if __name__ == '__main__':
